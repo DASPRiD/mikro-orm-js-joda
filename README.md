@@ -1,5 +1,7 @@
 # JS Joda for Mikro ORM
 
+[![Release](https://github.com/DASPRiD/mikro-orm-js-joda/actions/workflows/release.yml/badge.svg)](https://github.com/DASPRiD/mikro-orm-js-joda/actions/workflows/release.yml)
+
 This package provides [Mikro ORM](https://github.com/mikro-orm/mikro-orm) types for common 
 [JS Joda](https://github.com/js-joda/js-joda) objects.
 
@@ -34,7 +36,7 @@ import { Entity, Property } from "@mikro-orm/core";
 @Entity()
 export class HelloWorld {
     @Property({type: ZonedDateTimeType})
-    public dateTime : ZonedDateTime;
+    public dateTime: ZonedDateTime;
 }
 
 ```
