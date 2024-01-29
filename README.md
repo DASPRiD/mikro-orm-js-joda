@@ -14,6 +14,11 @@ The library exports the following types:
 It is not handling `LocalDateTime` at the moment, as that type is very platform dependent and Mikro ORM does not come
 with a declaration in its platform drivers.
 
+## Supported peer dependencies
+
+At the moment, you need to have a recent version of `@js-joda/core^5.6.1` and `@mikro-orm/core@^6.0.5`. Support for
+future major releases will be added as needed.
+
 ## Installation
 
 ### npm
