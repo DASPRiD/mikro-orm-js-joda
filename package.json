@@ -1,6 +1,6 @@
 {
   "name": "mikro-orm-js-joda",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JS Joda types for Mikro ORM",
   "type": "module",
   "author": "Ben Scholzen 'DASPRiD'",
