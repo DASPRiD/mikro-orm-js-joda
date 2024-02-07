@@ -4,21 +4,41 @@
         "enabled": true
     },
     "files": {
-        "include": [
-            "biome.json",
-            "cdk.json",
-            "release.config.cjs",
-            "commitlint.config.cjs",
-            "src/**/*"
-        ]
+        "include": ["biome.json", "commitlint.config.cjs", "release.config.cjs", "src/**/*"]
     },
     "linter": {
         "enabled": true,
         "rules": {
             "recommended": true,
             "nursery": {
+                "noEmptyTypeParameters": "error",
+                "noInvalidUseBeforeDeclaration": "error",
+                "noUnusedImports": "error",
+                "noUnusedPrivateClassMembers": "error",
+                "noUselessLoneBlockStatements": "error",
+                "noUselessTernary": "error",
+                "useExportType": "error",
                 "useImportType": "error",
-                "noUnusedImports": "error"
+                "useForOf": "error",
+                "useGroupedTypeImport": "error"
+            },
+            "complexity": {
+                "noExcessiveCognitiveComplexity": "warn",
+                "useSimplifiedLogicExpression": "error"
+            },
+            "correctness": {
+                "noNewSymbol": "error"
+            },
+            "style": {
+                "useBlockStatements": "error",
+                "useCollapsedElseIf": "error",
+                "useShorthandArrayType": "error",
+                "useShorthandAssign": "error",
+                "useSingleCaseStatement": "error"
+            },
+            "suspicious": {
+                "noApproximativeNumericConstant": "warn",
+                "noConsoleLog": "error"
             }
         }
     },
