@@ -14,13 +14,17 @@ export class LocalTimeType extends Type<LocalTime | null, string | null> {
         return value.toString();
     }
 
-    public convertToJSValue(value: LocalTime | string | null): LocalTime | null {
+    public convertToJSValue(value: LocalTime | Date | string | null): LocalTime | null {
         if (!value) {
             return null;
         }
 
         if (value instanceof LocalTime) {
             return value;
+        }
+
+        if (value instanceof Date) {
+            return LocalTime.parse(value.toISOString().substring(11, 23));
         }
 
         return LocalTime.parse(value);
