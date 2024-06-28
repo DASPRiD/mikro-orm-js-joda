@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/dasprid/mikro-orm-js-joda/compare/v1.0.1...v1.1.0) (2024-06-28)
+
+
+### Features
+
+* **mssql:** support dates being returned for local dates and times ([8f623e1](https://github.com/dasprid/mikro-orm-js-joda/commit/8f623e1551b87dcaed027452ec4b74fcdf280611))
+
 ## [1.0.1](https://github.com/dasprid/mikro-orm-js-joda/compare/v1.0.0...v1.0.1) (2024-02-07)
 
 
