@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/dasprid/mikro-orm-js-joda/compare/v1.1.0...v1.1.1) (2024-08-13)
+
+
+### Bug Fixes
+
+* use local date and time values when converting between Date and JSJoda ([7023466](https://github.com/dasprid/mikro-orm-js-joda/commit/7023466dfe86693765402ad4a774c7975900f516))
+
 # [1.1.0](https://github.com/dasprid/mikro-orm-js-joda/compare/v1.0.1...v1.1.0) (2024-06-28)
 
 
