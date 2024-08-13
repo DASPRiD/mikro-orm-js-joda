@@ -24,7 +24,7 @@ export class LocalDateType extends Type<LocalDate | null, string | null> {
         }
 
         if (value instanceof Date) {
-            return LocalDate.parse(value.toISOString().substring(0, 10));
+            return LocalDate.of(value.getFullYear(), value.getMonth() + 1, value.getDate());
         }
 
         return LocalDate.parse(value);

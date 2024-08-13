@@ -24,7 +24,7 @@ export class LocalTimeType extends Type<LocalTime | null, string | null> {
         }
 
         if (value instanceof Date) {
-            return LocalTime.parse(value.toISOString().substring(11, 23));
+            return LocalTime.of(value.getHours(), value.getMinutes(), value.getSeconds());
         }
 
         return LocalTime.parse(value);
