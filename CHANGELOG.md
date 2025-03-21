@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/dasprid/mikro-orm-js-joda/compare/v1.1.1...v1.1.2) (2025-03-21)
+
+
+### Bug Fixes
+
+* add types and module to package.json ([dfeeb82](https://github.com/dasprid/mikro-orm-js-joda/commit/dfeeb8279ab5f1765f1a4f1d8048b94dbd345e31))
+
 ## [1.1.1](https://github.com/dasprid/mikro-orm-js-joda/compare/v1.1.0...v1.1.1) (2024-08-13)
 
 
