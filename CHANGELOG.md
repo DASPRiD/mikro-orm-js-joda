@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/dasprid/mikro-orm-js-joda/compare/v1.1.2...v1.1.3) (2025-04-15)
+
+
+### Bug Fixes
+
+* add toJSON formatting to all types ([acb6a26](https://github.com/dasprid/mikro-orm-js-joda/commit/acb6a26cbf4924b9a48598e2021c9de81578f11c))
+
 ## [1.1.2](https://github.com/dasprid/mikro-orm-js-joda/compare/v1.1.1...v1.1.2) (2025-03-21)
 
 
