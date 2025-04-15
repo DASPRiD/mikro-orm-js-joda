@@ -34,6 +34,10 @@ export class LocalDateType extends Type<LocalDate | null, string | null> {
         return "string";
     }
 
+    public override toJSON(value: LocalDate | null): string | null {
+        return value ? value.toString() : null;
+    }
+
     public override getColumnType(prop: EntityProperty, platform: Platform): string {
         return platform.getDateTypeDeclarationSQL(prop.length);
     }

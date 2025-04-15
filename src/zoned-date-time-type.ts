@@ -1,7 +1,7 @@
-import { type ZonedDateTime, convert, nativeJs } from "@js-joda/core";
+import { DateTimeFormatter, type ZonedDateTime, convert, nativeJs } from "@js-joda/core";
 import { type EntityProperty, type Platform, Type } from "@mikro-orm/core";
 
-export class ZonedDateTimeType extends Type<ZonedDateTime | null, Date | null> {
+export class ZonedDateTimeType extends Type<ZonedDateTime | null, Date | string | null> {
     public convertToDatabaseValue(value: ZonedDateTime | null): Date | null {
         if (!value) {
             return null;
@@ -41,6 +41,10 @@ export class ZonedDateTimeType extends Type<ZonedDateTime | null, Date | null> {
 
     public override compareAsType(): string {
         return "date";
+    }
+
+    public override toJSON(value: ZonedDateTime | null): string | null {
+        return value ? value.format(DateTimeFormatter.ISO_OFFSET_DATE_TIME) : null;
     }
 
     public override getColumnType(prop: EntityProperty, platform: Platform): string {

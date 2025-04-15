@@ -34,6 +34,10 @@ export class LocalTimeType extends Type<LocalTime | null, string | null> {
         return "string";
     }
 
+    public override toJSON(value: LocalTime | null): string | null {
+        return value ? value.toString() : null;
+    }
+
     public override getColumnType(prop: EntityProperty, platform: Platform): string {
         return platform.getTimeTypeDeclarationSQL(prop.length);
     }
