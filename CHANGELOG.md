@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/dasprid/mikro-orm-js-joda/compare/v1.1.3...v1.1.4) (2025-08-08)
+
+
+### Bug Fixes
+
+* **zoned-date-time-type:** check if datetime ends with Z or z ([102ffe9](https://github.com/dasprid/mikro-orm-js-joda/commit/102ffe9de3c0f04d7bd0e75125b1e3bbb6a7e3bd))
+
 ## [1.1.3](https://github.com/dasprid/mikro-orm-js-joda/compare/v1.1.2...v1.1.3) (2025-04-15)
 
 
