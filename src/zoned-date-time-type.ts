@@ -32,7 +32,12 @@ export class ZonedDateTimeType extends Type<ZonedDateTime | null, Date | string 
             return new Date(value);
         }
 
-        if (typeof value === "number" || value.includes("+")) {
+        if (
+            typeof value === "number" ||
+            value.includes("+") ||
+            value.endsWith("Z") ||
+            value.startsWith("z")
+        ) {
             return new Date(value);
         }
 
