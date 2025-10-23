@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/DASPRiD/mikro-orm-js-joda/compare/v1.1.4...v1.1.5) (2025-10-23)
+
+
+### Bug Fixes
+
+* add provenance attestation ([fe66f9e](https://github.com/DASPRiD/mikro-orm-js-joda/commit/fe66f9e7c12e6b925b86cfd76c7a536d16e580d2))
+
 ## [1.1.4](https://github.com/dasprid/mikro-orm-js-joda/compare/v1.1.3...v1.1.4) (2025-08-08)
 
 
